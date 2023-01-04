@@ -8,7 +8,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: argo-demo
-  namespace: argocd
 spec:
   replicas: 1
   selector:
@@ -36,7 +35,6 @@ metadata:
   labels:
     app.kubernetes.io/name: argo-demo
   name: argo-demo
-  namespace: argocd
 spec:
   ports:
   - name: http
