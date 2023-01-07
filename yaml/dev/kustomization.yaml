@@ -4,5 +4,5 @@ resources:
 - deployment.yaml
 images:
 - name: the-my-app
-  newName: 440953937617.dkr.ecr.us-east-2.amazonaws.com/github-integrator
-  newTag: 20230104-20230104065832-3
+  newName: 440953937617.dkr.ecr.us-east-2.amazonaws.com/rollback-argo-test
+  newTag: 436dfe00a2b4a8b44a5bec2390359d6e964ca76b
