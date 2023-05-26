@@ -4,5 +4,5 @@ resources:
 - deployment.yaml
 images:
 - name: the-my-app
-  newName: testrgstr.azurecr.io/test
-  newTag: 0da84564777ff6838f8a320fd6ea4f7226bc3b7f
+  newName: testrgstr.azurecr.io/azure29042022
+  newTag: "100"
