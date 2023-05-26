@@ -5,4 +5,4 @@ resources:
 images:
 - name: the-my-app
   newName: testrgstr.azurecr.io/test
-  newTag: "169"
+  newTag: 0da84564777ff6838f8a320fd6ea4f7226bc3b7f
