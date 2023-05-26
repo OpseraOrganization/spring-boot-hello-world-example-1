@@ -4,6 +4,16 @@ metadata:
   name: argocd1
   
 ---
+apiVersion: v1
+data:
+  .dockerconfigjson: eyJhdXRocyI6eyJ0ZXN0cmdzdHIuYXp1cmVjci5pbyI6eyJ1c2VybmFtZSI6ImViNGZlMjM4LTQ5OTUtNGI3Yy04ZDIzLTc2YmIxZGU5ZmMxZiIsInBhc3N3b3JkIjoiZk10N1F+aW1BNGwyMnktLW9IcmRfWE1pQjVMUnlpeVVqa0FYSSIsImVtYWlsIjoic3Jpbml2YXNhbkBvcHNlcmEuaW8iLCJhdXRoIjoiWldJMFptVXlNemd0TkRrNU5TMDBZamRqTFRoa01qTXROelppWWpGa1pUbG1ZekZtT21aTmREZFJmbWx0UVRSc01qSjVMUzF2U0hKa1gxaE5hVUkxVEZKNWFYbFZhbXRCV0VrPSJ9fX0=
+kind: Secret
+metadata:
+  creationTimestamp: null
+  name: argo-demo-secret
+type: kubernetes.io/dockerconfigjson
+  
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -18,6 +28,8 @@ spec:
       labels:
         app: web
     spec:
+      imagePullSecrets:
+        - name: argo-demo-secret
       containers:
         - name: back-end
           image: the-my-app
