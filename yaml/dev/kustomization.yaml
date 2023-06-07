@@ -4,5 +4,5 @@ resources:
 - deployment.yaml
 images:
 - name: the-my-app
-  newName: 440953937617.dkr.ecr.us-east-2.amazonaws.com/spring-boot-repo
-  newTag: "138"
+  newName: 440953937617.dkr.ecr.us-east-2.amazonaws.com/argo-demo
+  newTag: "20230602"
