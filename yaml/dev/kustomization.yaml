@@ -5,4 +5,4 @@ resources:
 images:
 - name: the-my-app
   newName: 440953937617.dkr.ecr.us-east-2.amazonaws.com/spring-boot-repo
-  newTag: 5e9c3abe49161204c812ee18231da2f544dd4958
+  newTag: e49200afbf72b3fbce5cf01f0b5c9b36433cfb19
