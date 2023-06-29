@@ -4,5 +4,5 @@ resources:
 - deployment.yaml
 images:
 - name: the-my-app
-  newName: 440953937617.dkr.ecr.us-east-2.amazonaws.com/github-integrator
-  newTag: 20230629-20230629074703-1
+  newName: 440953937617.dkr.ecr.us-east-2.amazonaws.com/spring-boot-repo
+  newTag: 7e8557ba4869ec54510c802f46f7c972752ac787
